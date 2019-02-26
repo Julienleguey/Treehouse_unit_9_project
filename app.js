@@ -1,4 +1,4 @@
-'use strict';
+  'use strict';
 
 // load modules
 const express = require('express');
@@ -20,7 +20,7 @@ app.use(bodyParser());
 
 // adding mongoose
 const mongoose = require("mongoose");
-
+mongoose.set('runValidators', true);
 mongoose.connect("mongodb://localhost:27017/fsjstd-restapi", { useNewUrlParser: true });
 
 
